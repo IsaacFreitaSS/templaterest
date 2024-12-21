@@ -1,0 +1,192 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:host {
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* Estilização do body para centralizar o conteúdo */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Estilo da caixa de login */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os botões */
+    justify-content: center;
+}
+
+.button-group a {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 30px; /* Botões arredondados */
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+/* Botão Entrar */
+.login-button {
+    background-color: #2e7d32; /* Verde */
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #1b5e20; /* Verde mais escuro no hover */
+    transform: translateY(-3px); /* Elevação no hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+/* Botão Registrar */
+.register-button {
+    background-color: #c62828; /* Vermelho */
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #b71c1c; /* Vermelho mais escuro no hover */
+    transform: translateY(-3px); /* Elevação no hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .form-container {
+        width: 90%; /* Adapta a largura para telas menores */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .button-group a {
+        font-size: 0.9rem; /* Reduz tamanho da fonte em telas menores */
+        padding: 10px 20px;
+    }
+}

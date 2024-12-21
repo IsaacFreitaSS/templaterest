@@ -1,0 +1,116 @@
+/* Estilo geral da caixa de registro */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do botão "Voltar para Login" */
+.back a {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 30px; /* Botão arredondado */
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #2e7d32; /* Verde */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Espaçamento abaixo */
+}
+
+/* Efeito hover para o botão "Voltar para Login" */
+.back a:hover {
+    background-color: #1b5e20; /* Verde mais escuro no hover */
+    transform: translateY(-3px); /* Elevação no hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
+
+/* Caixa de formulário */
+.form-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra da caixa */
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* Título do formulário */
+.form-box h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+/* Botão "Criar Conta" */
+.register-button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 1%;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #c62828;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%; /* O botão ocupa toda a largura */
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-button:hover {
+    background-color: #b71c1c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    .form-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .back a,
+    .register-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
